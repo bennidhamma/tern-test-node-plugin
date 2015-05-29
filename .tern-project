@@ -1,0 +1,14 @@
+{
+  "libs": [
+    "browser",
+    "jquery",
+    "scout"
+  ],
+  "plugins": {
+    "node": {
+      "modules": {
+        "ScoutData": "scout.json"
+      }
+    }
+  }
+}
