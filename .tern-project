@@ -2,12 +2,12 @@
   "libs": [
     "browser",
     "jquery",
-    "scout"
+    "ScoutData"
   ],
   "plugins": {
     "node": {
       "modules": {
-        "ScoutData": "scout.json"
+        "ScoutData": "$ScoutData"
       }
     }
   }
