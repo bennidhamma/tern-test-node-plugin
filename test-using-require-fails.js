@@ -5,4 +5,4 @@ var m = new ScoutData.ForumTopicMetaData();
 
 /* this is a finsihed comment */
 
-m.
+m.announcementFooter.announcementId

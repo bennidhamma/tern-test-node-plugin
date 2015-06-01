@@ -7,7 +7,7 @@
   "plugins": {
     "node": {
       "modules": {
-        "ScoutData": "$ScoutData"
+        "ScoutData": "=ScoutData"
       }
     }
   }

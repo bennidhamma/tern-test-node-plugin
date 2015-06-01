@@ -1,0 +1,331 @@
+{
+  "!name": "ScoutData",
+  "ScoutData": {
+    "ForumTopicMetaData": {
+      "!type": "fn(arg: +ScoutData.ForumTopicMetaData)",
+      "prototype": {
+        "id": "number",
+        "thread": "+ScoutData.Thread",
+        "forum": "+ScoutData.Forum",
+        "site": "+ScoutData.Site",
+        "announcementHeader": "+ScoutData.AnnouncementHeader",
+        "announcementFooter": "+ScoutData.AnnouncementFooter",
+        "webServer": "+ScoutData.WebServer",
+        "dateOverride": "Date",
+        "siteId": "string",
+        "siteName": "string",
+        "viewStats": "[+ScoutData.ViewStats]",
+        "notice": "+ScoutData.ForumNotice",
+        "type": "string",
+        "containerType": "string",
+        "forumName": "string",
+        "isPublicSite": "bool",
+        "isActive": "bool",
+        "isPremium": "bool",
+        "boost": "number",
+        "indexDateTimeUTC": "Date",
+        "tags": "[+ScoutData.Tag]",
+        "statusCode": "number",
+        "reason": "string",
+        "redirectUrl": "string"
+      }
+    },
+    "Boardgame": {
+      "!type": "fn(arg: +ScoutData.Boardgame)",
+      "prototype": {
+        "id": "string",
+        "bggId": "string",
+        "title": "string",
+        "primaryPhotoUrl": "string",
+        "description": "string",
+        "authors": "[string]",
+        "numberOfPlayers": "+ScoutData.Range",
+        "expansions": "[+ScoutData.BoardgameInfo]",
+        "categories": "[string]",
+        "honors": "[string]",
+        "yearMade": "Date",
+        "playingTimeInMinutes": "number",
+        "rank": "number",
+        "rating": "+ScoutData.RatingStats",
+        "officialUrl": "string",
+        "family": "string",
+        "uri": "string"
+      }
+    },
+    "Thread": {
+      "!type": "fn(arg: +ScoutData.Thread)",
+      "prototype": {
+        "id": "number",
+        "previousTopic": "number",
+        "previousTopicSubject": "string",
+        "nextTopic": "number",
+        "nextTopicSubject": "string",
+        "currentPage": "number",
+        "totalPages": "number",
+        "totalMessages": "number",
+        "lastPostDate": "string",
+        "viewModeBlog": "string",
+        "statusStickyLockedFull": "string",
+        "canReplyQuickReply": "string",
+        "firstMessageId": "number",
+        "firstMessageSubject": "string",
+        "subThreadMessageId": "number",
+        "expirationDate": "string",
+        "messagePosts": "[+ScoutData.MessagePost]",
+        "post": "+ScoutData.MessagePost",
+        "isSticky": "bool",
+        "isLocked": "bool",
+        "isFull": "bool"
+      }
+    },
+    "Forum": {
+      "!type": "fn(arg: +ScoutData.Forum)",
+      "prototype": {
+        "id": "number",
+        "name": "string",
+        "shortName": "string",
+        "description": "string",
+        "topics": "number",
+        "posts": "number",
+        "pendingMessagesCount": "number",
+        "questionableMessagesCount": "number",
+        "postOfTheDayNomineesCount": "number",
+        "archivedTopicsQueueIsFull": "bool",
+        "isPrivateForum": "bool",
+        "lastPostDate": "string",
+        "lastPostBy": "string",
+        "lastPostId": "number",
+        "lastReadPostId": "number",
+        "currentUserPermissionsEnumeration": "string",
+        "forumModerators": "[+ScoutData.ForumModerator]"
+      }
+    },
+    "Site": {
+      "!type": "fn(arg: +ScoutData.Site)",
+      "prototype": {
+        "id": "string",
+        "name": "string",
+        "backgroundColor": "string",
+        "chatUrl": "string",
+        "subdomain": "string",
+        "friendlySubdomain": "string",
+        "expandOnlineUsersYesNo": "string",
+        "onlineUsersYesTopNoBottom": "string",
+        "displaySubscriberBadge": "string",
+        "displaySubscriberPostUserRatings": "string",
+        "displayBannersYesNo": "string",
+        "promoMagazineUrl": "string",
+        "customTextColor": "string",
+        "customLinkColor": "string",
+        "customRow1Color": "string",
+        "customRow2Color": "string",
+        "customBorderColor": "string",
+        "customVisitedLinkColor": "string",
+        "timeZoneDisplayName": "string",
+        "timeZoneOffsetHoursFromServers": "number",
+        "currentUserPermissionsEnumeration": "string",
+        "pendingUserQueueLength": "number",
+        "chatUserCount": "number",
+        "siteLevel": "string"
+      }
+    },
+    "AnnouncementHeader": {
+      "!type": "fn(arg: +ScoutData.AnnouncementHeader)",
+      "prototype": {
+        "announcementId": "number"
+      }
+    },
+    "AnnouncementFooter": {
+      "!type": "fn(arg: +ScoutData.AnnouncementFooter)",
+      "prototype": {
+        "announcementId": "number"
+      }
+    },
+    "WebServer": {
+      "!type": "fn(arg: +ScoutData.WebServer)",
+      "prototype": {
+        "name": "string",
+        "pathToCode": "string",
+        "debug": "string"
+      }
+    },
+    "ViewStats": {
+      "!type": "fn(arg: +ScoutData.ViewStats)",
+      "prototype": {
+        "from": "Date",
+        "to": "Date",
+        "count": "number"
+      }
+    },
+    "ForumNotice": {
+      "!type": "fn(arg: +ScoutData.ForumNotice)",
+      "prototype": {
+        "noticeLevel": "number",
+        "isPositive": "bool",
+        "text": "string"
+      }
+    },
+    "Tag": {
+      "!type": "fn(arg: +ScoutData.Tag)",
+      "prototype": {
+        "id": "string",
+        "name": "string"
+      }
+    },
+    "Range": {
+      "!type": "fn(arg: +ScoutData.Range)",
+      "prototype": {
+        "from": "number",
+        "to": "number"
+      }
+    },
+    "BoardgameInfo": {
+      "!type": "fn(arg: +ScoutData.BoardgameInfo)",
+      "prototype": {
+        "id": "string",
+        "title": "string"
+      }
+    },
+    "RatingStats": {
+      "!type": "fn(arg: +ScoutData.RatingStats)",
+      "prototype": {
+        "count": "number",
+        "average": "number",
+        "ratingCounts": "[+ScoutData.RatingCountBucket]",
+        "score": "number"
+      }
+    },
+    "MessagePost": {
+      "!type": "fn(arg: +ScoutData.MessagePost)",
+      "prototype": {
+        "topicId": "number",
+        "messageId": "number",
+        "currentUserPermissionsEnumeration": "string",
+        "messageHeader": "+ScoutData.MessageHeader",
+        "author": "+ScoutData.Author",
+        "messageBody": "+ScoutData.MessageBody",
+        "authorSignature": "+ScoutData.AuthorSignature",
+        "topicLog": "+ScoutData.TopicLog",
+        "messageLog": "+ScoutData.MessageLog"
+      }
+    },
+    "ForumModerator": {
+      "!type": "fn(arg: +ScoutData.ForumModerator)",
+      "prototype": {
+        "name": "string"
+      }
+    },
+    "RatingCountBucket": {
+      "!type": "fn(arg: +ScoutData.RatingCountBucket)",
+      "prototype": {
+        "rating": "number",
+        "count": "number"
+      }
+    },
+    "MessageHeader": {
+      "!type": "fn(arg: +ScoutData.MessageHeader)",
+      "prototype": {
+        "id": "number",
+        "subject": "string",
+        "postDate": "Date",
+        "authorHandle": "string",
+        "previewText": "string",
+        "containsPoll": "bool",
+        "replies": "number",
+        "views": "number",
+        "ranking": "string",
+        "rankingCount": "number",
+        "statusDeleted": "string",
+        "lastEditedDate": "string",
+        "lastEditUserHandle": "string",
+        "nestedMessageHeader": "+ScoutData.MessageHeader"
+      }
+    },
+    "Author": {
+      "!type": "fn(arg: +ScoutData.Author)",
+      "prototype": {
+        "authorData": "+ScoutData.AuthorData",
+        "overallScoutRating": "+ScoutData.OverallScoutRating",
+        "currentSiteRating": "+ScoutData.CurrentSiteRating"
+      }
+    },
+    "MessageBody": {
+      "!type": "fn(arg: +ScoutData.MessageBody)",
+      "prototype": {
+        "body": "string"
+      }
+    },
+    "AuthorSignature": {
+      "!type": "fn(arg: +ScoutData.AuthorSignature)",
+      "prototype": {
+        "signature": "string"
+      }
+    },
+    "TopicLog": {
+      "!type": "fn(arg: +ScoutData.TopicLog)",
+      "prototype": {
+        "entries": "[+ScoutData.Entry]"
+      }
+    },
+    "MessageLog": {
+      "!type": "fn(arg: +ScoutData.MessageLog)",
+      "prototype": {
+        "entries": "[+ScoutData.Entry]"
+      }
+    },
+    "AuthorData": {
+      "!type": "fn(arg: +ScoutData.AuthorData)",
+      "prototype": {
+        "name": "string",
+        "privateMessageHandle": "string",
+        "joinedDate": "string",
+        "isPremiumMember": "bool",
+        "premiumSubscriberThisSite": "bool",
+        "userTimeZoneOffsetHoursFromServers": "number",
+        "displayAvatars": "string",
+        "memberHomePage": "string",
+        "avatarUrl": "string",
+        "userTimeZoneDisplayName": "string",
+        "allowPrivateMessages": "bool",
+        "hideAvatars": "bool",
+        "hideSignatures": "bool",
+        "topicView": "number",
+        "postSortOrderWithinTopic": "number",
+        "ignoredUsers": "[+ScoutData.IgnoredUser]",
+        "isSearchEngine": "bool"
+      }
+    },
+    "OverallScoutRating": {
+      "!type": "fn(arg: +ScoutData.OverallScoutRating)",
+      "prototype": {
+        "rating": "string",
+        "posts": "number"
+      }
+    },
+    "CurrentSiteRating": {
+      "!type": "fn(arg: +ScoutData.CurrentSiteRating)",
+      "prototype": {
+        "siteRating": "string",
+        "sitePosts": "number",
+        "userTitle": "string",
+        "lastLoginDate": "string"
+      }
+    },
+    "Entry": {
+      "!type": "fn(arg: +ScoutData.Entry)",
+      "prototype": {
+        "elementDate": "string",
+        "standardDate": "string",
+        "userHandle": "string",
+        "userIPAddress": "string",
+        "action": "string"
+      }
+    },
+    "IgnoredUser": {
+      "!type": "fn(arg: +ScoutData.IgnoredUser)",
+      "prototype": {
+        "name": "string"
+      }
+    }
+  }
+}
